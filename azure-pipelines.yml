@@ -15,7 +15,7 @@ steps:
     command: 'build'
     workingDirectory: 'quickstart\aspnet-core\ContosoTeamStats'
 - task: NuGetCommand@2
-  continueOnError: true
+  continueOnError: false
   displayName: 'NuGet restore ASP.NET quickstart'
   inputs:
     command: 'restore'
